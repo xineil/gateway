@@ -1,21 +1,18 @@
+var task = new Ext.util.DelayedTask(function() {
+			Ext.getBody().unmask();
+		});
 Ext.application({
-    requires: 'Ext.container.Viewport',
-    name: 'AM',
+			name : 'Gway',
+			appFolder : 'app',
+			splashscreen : {},
 
-    appFolder: 'app',
-    
-    controllers: [
-        'Users'
-    ],
+			init : function() {
+				splashscreen = Ext.getBody().mask('Loading application',
+						'splashscreen')
+			},
 
-    launch: function() {
-        Ext.create('Ext.container.Viewport', {
-            layout: 'fit',
-            items: [
-                {
-                xtype: 'userlist'
-                }
-            ]
-        });
-    }
-});
+			launch : function() {
+				task.delay(1000);
+				console.log("thiis is the console log")
+			}
+		});
