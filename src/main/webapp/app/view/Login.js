@@ -33,7 +33,6 @@ Ext.define('Gway.view.Login', {
 		}, {
 			inputType : 'password',
 			name : 'password',
-			//vtype : 'customPass',
 			fieldLabel : "password",
 			maxLength : 15
 		} ],

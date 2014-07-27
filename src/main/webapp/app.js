@@ -4,7 +4,6 @@ Ext.application({
 	splashscreen : {},
 	controllers : ['Login'],
 
-
 	init : function() {
 		splashscreen = Ext.getBody().mask('Loading application', 'splashscreen');
 	},

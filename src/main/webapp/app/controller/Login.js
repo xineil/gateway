@@ -1,7 +1,10 @@
 Ext.define('Gway.controller.Login',{
 	extend : 'Ext.app.Controller',
 	
-	views :['Login'],
+	views :[
+	'Login',
+	'MyViewport'
+	],
 	
 	init : function(appplication){
 		this.control({
@@ -16,6 +19,7 @@ Ext.define('Gway.controller.Login',{
 	
 	onButtonClickSubmit : function(button, e, options){
 		console.log('login submit');
+		Ext.create('MyViewport');
 	},
 	
 	onButtonClickCancel : function(button, e, options){
