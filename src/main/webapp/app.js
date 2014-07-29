@@ -1,12 +1,19 @@
+var task = new Ext.util.DelayedTask(function() {
+			Ext.getBody().unmask();
+		});
 Ext.application({
+
 	name : 'Gway',
 	appFolder : 'app',
 	splashscreen : {},
 	controllers : ['Login'],
 
+
+
 	init : function() {
 		splashscreen = Ext.getBody().mask('Loading application', 'splashscreen');
 	},
+
 
 	launch : function() {
 		var task = new Ext.util.DelayedTask(function() {
@@ -27,3 +34,4 @@ Ext.application({
 		task.delay(0);
 	}
 });
+

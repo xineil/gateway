@@ -1,4 +1,5 @@
 Ext.define('Gway.view.Login', {
+
 	extend : 'Ext.window.Window',
 	alias : 'widget.login',
 

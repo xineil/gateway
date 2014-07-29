@@ -19,7 +19,7 @@ Ext.define('Gway.controller.Login',{
 	
 	onButtonClickSubmit : function(button, e, options){
 		console.log('login submit');
-		Ext.create('MyViewport');
+		Ext.widget('myviewport');
 	},
 	
 	onButtonClickCancel : function(button, e, options){

@@ -1,6 +1,6 @@
 Ext.define('Gway.view.MyViewport',{
 	extend : 'Ext.container.Viewport',
-	alias : 'widget.mainviewport',
+	alias : 'widget.myviewport',
 	
 	requires : [
 		'Gway.view.Header'
